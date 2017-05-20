@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*整体布局*/
+
+header {
+    background-color: rgb(57, 48, 53);
+    overflow: hidden;
+}
+
+main {
+    background-color: rgb(177, 185, 219);
+    padding-top: 3em;
+}
+
+aside {
+    background-color: rgb(177, 185, 219);
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 6em;
+}
+
+
+/**
+**
+header部分
+*
+**/
+
+
+/*导航栏主体*/
+
+.header-logo {
+    float: left;
+    margin-left: 3em;
+    font-size: 16px;
+    padding-top: 0.75em;
+}
+
+.header-nav {
+    float: right;
+    height: 4em;
+    line-height: 4;
+    margin-right: 3em;
+}
+
+
+/*导航栏logo部分*/
+
+.header-logo img {
+    height: 2.5em;
+}
+
+
+/*导航栏链接部分*/
+
+.header-item {
+    list-style: none;
+    float: left;
+    padding-left: 1.5em;
+}
+
+.header-item1 a:link {
+    color: rgb(255, 255, 0);
+}
+
+.header-item2 a:visited {
+    color: rgb(0, 0, 255);
+}
+
+.header-item3 a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.header-item4 .active {
+    color: rgb(255, 0, 255);
+}
+
+
+/*main部分*/
+
+.main-article, .main-picture, .aside-section {
+    border: 1px solid rgb(255, 0, 255);
+    width: 90%;
+    margin: 0 auto 2em;
+    padding: 1.5em 2em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px rgb(101, 40, 69);
+}
+
+
+/*article部分*/
+
+.main-h3 {
+    color: rgb(81, 150, 196);
+    padding: 1em 0 0.5em;
+}
+
+.main-autor {
+    color: rgb(98, 90, 117);
+    font-size: 0.8em;
+    padding-bottom: 2em;
+}
+
+.main-text {
+    text-indent: 2em;
+    line-height: 2em;
+}
+
+.main-article>img {
+    width: 15em;
+    height: 15em;
+    border: 1px solid rgb(255, 0, 0);
+    margin: 1em 0;
+}
+
+.main-article>ul {
+    list-style: none;
+    padding-left: 1em;
+}
+
+
+/*section部分*/
+
+.main-figure {
+    border: 1px solid rgb(255, 0, 0);
+    font-size: 16px;
+    width: 15em;
+    text-align: center;
+    margin: 1em;
+    overflow: hidden;
+    line-height: 3em;
+}
+
+.main-figure>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*table部分*/
+
+.main-article ol {
+    margin: 0 0 1em 2em;
+    font-weight: bold;
+}
+
+.main-table {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 40px;
+    border: 1px solid rgb(218, 171, 208);
+    margin-bottom: 2em;
+}
+
+.main-table th {
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 73, 96);
+}
+
+.main-table td {
+    border: 1px solid rgb(218, 171, 208);
+}
+
+.main-table tfoot {
+    background-color: rgb(81, 215, 140);
+}
+
+
+/*侧栏部分*/
+
+.aside {
+    margin-top: -2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.aside-h2 {
+    border-left: 5px solid rgb(167, 130, 184);
+    font-size: 25px;
+    line-height: 50px;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+.aside-p {
+    font-size: 13px;
+    color: rgb(164, 132, 173);
+}
+
+.aside table {
+    border-spacing: 20px;
+    width: 94%;
+    margin: 0 auto 40px;
+}
+
+.left {
+    text-align: right;
+}
+
+.right {
+    text-align: left;
+}
+
+input[type="text"], input[type="password"] {
+    width: 200px;
+    height: 20px;
+}
+
+button[type="submit"] {
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(74, 20, 230);
+    height: 3em;
+    margin: 0 auto;
+    display: block;
+}

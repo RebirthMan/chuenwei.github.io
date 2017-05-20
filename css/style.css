@@ -19,6 +19,7 @@ header.top {
     background: rgba(0, 0, 0, 1);
 }
 header.top h1 {
+    text-align: center;
     line-height: 3;
     color: white;
     padding-left: 30px;

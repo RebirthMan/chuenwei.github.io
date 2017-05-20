@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习CSS3的新特性</title>
+    <style>
+        thead :first-child {
+            background-color: #000;
+            color: #fff;
+        }
+
+        tbody :not(:nth-child(odd)) td {
+            background-color: #ccc;
+        }
+
+        tbody :nth-child(-n+3) td {
+            color: #f00;
+        }
+
+        input {
+            width: 100px;
+            border: 2px solid #ccc;
+            margin: 20px auto;
+            display: block;
+            transition: width 1s ease 1s, border-color 1s ease;
+        }
+
+        input:focus {
+            width: 400px;
+            border-color: #f0f;
+        }
+
+        ul,
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .banner {
+            width: 500px;
+            height: 400px;
+            position: relative;
+        }
+
+        .banner-bg li {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .banner-bg li:nth-child(1) {
+            background-color: #f0f;
+        }
+
+        .banner-bg li:nth-child(2) {
+            background-color: #0ff;
+        }
+
+        .banner-bg li:nth-child(3) {
+            background-color: #f00;
+        }
+
+        .banner-num {
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+            z-index: 99;
+        }
+
+        .banner-num li {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+            float: left;
+            margin-right: 10px;
+        }
+
+        .banner-num li a {
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+        }
+
+        @keyframes play {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 0%;
+            }
+        }
+
+        li:target {
+            z-index: 5;
+            animation: play .5s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>网站</th>
+                <th>热度</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>百度前端学院</td>
+                <td>13000</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>百度前端学院</td>
+                <td>12000</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>百度前端学院</td>
+                <td>11000</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>百度前端学院</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>百度前端学院</td>
+                <td>9000</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>百度前端学院</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>百度前端学院</td>
+                <td>7000</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>百度前端学院</td>
+                <td>6000</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>百度前端学院</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>百度前端学院</td>
+                <td>4000</td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="text">
+    <div class="banner">
+        <ul class="banner-bg">
+            <li id="l1"></li>
+            <li id="l2"></li>
+            <li id="l3"></li>
+        </ul>
+        <ul class="banner-num">
+            <li><a href="#l1">1</a></li>
+            <li><a href="#l2">2</a></li>
+            <li><a href="#l3">3</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px
+}
+
+.wrap {
+    padding: 20px;
+    border: 1px solid #999;
+    background: #eee;
+    overflow: hidden;
+}
+
+.left {
+    width: 160px;
+    padding: 20px;
+    border: 1px solid #999;
+    float: left;
+    overflow: hidden;
+    background: #fff;
+}
+
+.left span {
+    float: left;
+    margin-left: 12px;
+}
+
+.left img {
+    float: left;
+}
+
+.main {
+    padding: 20px;
+    border: 1px solid #999;
+    margin: 0 140px 0 220px;
+    background: #fff;
+}
+
+.right {
+    width: 80px;
+    padding: 20px;
+    border: 1px solid #999;
+    float: right;
+    background: #fff;
+}
+
+.right img {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #999;
+}

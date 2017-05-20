@@ -1,0 +1,65 @@
+// var
+$height: 50px;
+$padding: 10px;
+$background-color: #eee;
+$border-color: #999;
+
+//mixin
+@mixin childstyle {
+    height: $height;
+    border: 1px solid $border-color;
+    background-color: $background-color;
+}
+@mixin parentstyle {
+    float: left;
+    padding: $padding;
+}
+@mixin grid($tag) {
+     @for $i from 1 through 12{
+        .row-#{$tag}-#{$i} {
+            width: (100% / 12 * $i);
+        }
+    }
+}
+
+//clearfix
+//  @mixin clearfix {
+//      &::after {
+//         content: "";
+//         display: block;
+//         clear: both;
+//     }
+// }
+//
+// reset
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+//style
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: $padding;
+}
+
+.parent {
+    @include parentstyle;
+    @at-root .child {
+         @include childstyle;
+    }
+}
+//media
+@media (max-width: 768px) {
+     @include grid( 'sm');
+}
+@media (min-width: 769px) {
+     @include grid( 'md');
+}
